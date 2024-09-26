@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web calculator</title>
+    <link href="css/StyleTres.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Gudo's Web calculator</h1>
+    <h3 id="result"> </h3>
+    <div>
+        <button id="1" onclick="add(1)">1</button>
+        <button id="2" onclick="add(2)">2</button>
+        <button id="3" onclick="add(3)">3</button>
+        <br />
+        <button id="4" onclick="add(4)">4</button>
+        <button id="5" onclick="add(5)">5</button>
+        <button id="6" onclick="add(6)">6</button>
+        <button id="+" onclick="readyforswitch(0)">+</button>
+        <br />
+        <button id="7" onclick="add(7)">7</button>
+        <button id="8" onclick="add(8)">8</button>
+        <button id="9" onclick="add(9)">9</button>
+        <button id="-" onclick="readyforswitch(1)">-</button>
+        <br />
+        <button id="negate" onclick="negate()">-/+</button>
+        <button id="0" onclick="add(0)">0</button>
+        <button id=",">.</button>
+        <button id="=" onclick="bereken()">=</button>
+    </div>
+    Fixed by Danny
+    <script src="js/CalcScript.js"></script>
+</body>
+
+</html>
