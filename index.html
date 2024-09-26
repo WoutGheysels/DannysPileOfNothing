@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>xss</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <script src="/js/script.js" type="text/javascript"></script>
+
+    <p>
+        <input type="text" placeholder="sql" id="userinput">
+        <button id="demo" onclick="xss()">click me</button>
+    </p>
+    <div class="footer">
+        <a href="/sql.html">
+            <input type="button" value="next level" />
+        </a>
+    </div>
+    <div class="rating">
+        <input value="5" name="rate" id="star5" type="radio">
+        <label title="text" for="star5"></label>
+        <input value="4" name="rate" id="star4" type="radio">
+        <label title="text" for="star4"></label>
+        <input value="3" name="rate" id="star3" type="radio" checked="">
+        <label title="text" for="star3"></label>
+        <input value="2" name="rate" id="star2" type="radio">
+        <label title="text" for="star2"></label>
+        <input value="1" name="rate" id="star1" type="radio">
+        <label title="text" for="star1"></label>
+    </div>
+    /* From Uiverse.io by Nawsome */
+    <div class="content">
+        <label class="checkBox">
+            <input id="ch1" type="checkbox">
+            <div class="transition"></div>
+        </label>
+    </div>
+</body>
+
+</html>
